@@ -69,7 +69,7 @@ void setup() {
   lcd.setCursor(0, 0);
   lcd.print("Driving 4 seconds...");
 
-  delay(2000); // Jízda přesně 4 sekundy
+  delay(4000); // Jízda přesně 4 sekundy
 
   // 3. Zastavení motorů
   analogWrite(Motor_L_pwm_pin, 0);
