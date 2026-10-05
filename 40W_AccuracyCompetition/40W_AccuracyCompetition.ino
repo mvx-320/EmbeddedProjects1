@@ -60,8 +60,8 @@ PulsePair runMotors() {
 
   digitalWrite(Motor_L_dir_pin, Motor_forward);
   digitalWrite(Motor_R_dir_pin, Motor_forward);
-  analogWrite(Motor_L_pwm_pin, 56);
-  analogWrite(Motor_R_pwm_pin, 60);
+  analogWrite(Motor_L_pwm_pin, 149.3);
+  analogWrite(Motor_R_pwm_pin, 160);
 
 
   while (distance > targetDistance) {
