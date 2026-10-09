@@ -32,8 +32,8 @@ void setup() {
 }
 
 void loop() {
-  js_values[0] = analogRead(VRX);
-  js_values[1] = analogRead(VRY);
+  js_values[0] = analogRead(VRY);
+  js_values[1] = analogRead(VRX);
 
   if (prev_js_values[0] != js_values[0] || 
       prev_js_values[1] != js_values[1]) {
