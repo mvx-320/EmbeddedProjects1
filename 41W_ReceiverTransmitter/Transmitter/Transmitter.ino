@@ -2,36 +2,52 @@
 #include <nRF24L01.h>
 #include <RF24.h>
 
-#define led 12
+const int VRX = A8;
+const int VRY = A9;
+const int interruptPin = 19;
 
-RF24 radio(7, 8); // CE, CSN
+#define NRF_CE 48
+#define NRF_CNS 49
+
+//#define BTN 12
+
+RF24 radio(NRF_CE, NRF_CNS); // CE, CSN
 const byte addresses[][6] = {"00001", "00002"};
-boolean buttonState = 0;
+int js_values[2] = {0, 0};
+int prev_js_values[2] = {0, 0};
 
 void setup() {
-  pinMode(12, OUTPUT);
+  Serial.begin(9600);
+  //pinMode(interruptPin, INPUT_PULLUP);
   radio.begin();
+  radio.setChannel(40);
   radio.openWritingPipe(addresses[1]); // 00002
   radio.openReadingPipe(1, addresses[0]); // 00001
   radio.setPALevel(RF24_PA_MIN);
+
+
+  Serial.println(radio.isChipConnected() ? "chip ok" : "chip lost");
+  radio.stopListening();
+
 }
 
 void loop() {
-  delay(5);
+  js_values[0] = analogRead(VRX);
+  js_values[1] = analogRead(VRY);
 
-  radio.stopListening();
-  int potValue = analogRead(A0);
-  int angleValue = map(potValue, 0, 1023, 0, 180);
-  radio.write(&angleValue, sizeof(angleValue));
+  if (prev_js_values[0] != js_values[0] || 
+      prev_js_values[1] != js_values[1]) {
+
+    Serial.println();
+    Serial.println(js_values[0]);
+    Serial.println(js_values[1]);
+
+    bool done = radio.write(&js_values, sizeof(js_values));
+    Serial.println(done ? "Message sent" : "Message not sent");
+
+    prev_js_values[0] = js_values[0];
+    prev_js_values[1] = js_values[1];
+  }
 
   delay(5);
-  radio.startListening();
-  while (!radio.available());
-  radio.read(&buttonState, sizeof(buttonState));
-  if (buttonState == HIGH) {
-    digitalWrite(led, HIGH);
-  }
-  else {
-    digitalWrite(led, LOW);
-  }
 }
