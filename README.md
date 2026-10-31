@@ -4,8 +4,6 @@
 - In this course we build a scrappy vehicle out of Lego in weekly exercises. 
 
 ## Project Process
-*Loading the GIFs may take a while*
-
 <table width="100%">
     <tr>
         <td width="40%">
@@ -43,6 +41,7 @@ r_N = \frac{r}{max(l, r, 1)}
 $$
 
 ---
+*Loading the GIFs may take a while ...*
 
 <table>
     <tr>
