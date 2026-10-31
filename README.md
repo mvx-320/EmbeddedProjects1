@@ -15,11 +15,11 @@
         <td width="60%">
 <table>
     <tr>
-        <td>
-<img src="./Assets/VehiclePortrait.png" width="340">
+        <td width="70%">
+<img src="./Assets/VehiclePortrait.png">
         </td>
-        <td>
-<img src="./Assets/VehicleBack.jpeg" width="170" style="border-radius: 16px;">
+        <td width="30%">
+<img src="./Assets/VehicleBack.jpeg" style="border-radius: 16px;">
         </td>
     </tr>
 </table>
@@ -27,7 +27,8 @@
     </td>
 </table>
 
-- Shortly after that we prepared our car for a speed competition. For that we wrote a program using an arcade calculation to steer the vehicle only with one Joystick.
+- Shortly after that we prepared our car for a speed competition. For that we wrote a program using an arcade calculation to steer the vehicle only with one Joystick. 
+
 $$
 \begin{array}{ccc}
 x_N \in [-1,1] \qquad &
@@ -63,11 +64,11 @@ Sadly we couldn't achieve a really good time due to a major bug in our program t
 <table>
     <tr>
         <td align="center">
-            <img src="./Assets/OscilloscopeBroken.jpeg" width="400" style="border-radius: 16px;"><br>
+            <img src="./Assets/OscilloscopeBroken.jpeg" style="border-radius: 16px;"><br>
             <sub>Broken Motor</sub>
         </td>
         <td align="center">
-            <img src="./Assets/OscilloscopeWorking.jpeg" width="400" style="border-radius: 16px;"><br>
+            <img src="./Assets/OscilloscopeWorking.jpeg" style="border-radius: 16px;"><br>
             <sub>Working Motor</sub>
         </td>
     </tr>
@@ -82,10 +83,10 @@ After that we started using encoders and interrupts with it to measure how far t
 <table align="right">
     <tr>
         <td align="center">
-            <img src="./Assets/VehicleLidar.jpeg" width="400" style="border-radius: 16px;">
+            <img src="./Assets/VehicleLidar.jpeg" style="border-radius: 16px;">
         </td>
         <td align="center">
-            <img src="./Assets/AccuracyLeaderboard.jpeg" width="400" style="border-radius: 16px;">
+            <img src="./Assets/AccuracyLeaderboard.jpeg" style="border-radius: 16px;">
         </td>
     </tr>
 </table>
@@ -96,7 +97,7 @@ Also we couldn't get precise results out of the working encoder. The course teac
     </tr>
     <tr>
         <td align="right">
-<video src="./Assets/WirelessVehicle.mp4" controls autoplay loop muted width="300" style="border-radius: 16px"></video>
+<video src="./Assets/WirelessVehicle.mp4" controls autoplay loop muted width="70%" style="border-radius: 16px"></video>
         </td>
         <td>
 We got the transmitter/receiver module `nRF24L01` as an optional additional challenge. Our group was able to build a scrappy but functional wireless controllable vehicle. Which was without the delay bug from before very controlable and was very fun to drive around.
