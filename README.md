@@ -4,7 +4,7 @@
 - In this course we build a scrappy vehicle out of Lego in weekly exercises. 
 
 ## Project Process
-<table>
+<table width="100%">
     <tr>
         <td width="40%">
 <ul>
@@ -15,10 +15,10 @@
         <td width="60%">
 <table>
     <tr>
-        <td width="70%">
+        <td width="300">
 <img src="./Assets/VehiclePortrait.png">
         </td>
-        <td width="30%">
+        <td width="170">
 <img src="./Assets/VehicleBack.jpeg" style="border-radius: 16px;">
         </td>
     </tr>
@@ -53,7 +53,7 @@ At the testing phase we used 3x 9V batteries in parallel on the Vin Pin of the A
     </tr>
     <tr>
         <td align="right">
-<video src="./Assets/SpeedCompetition.mp4" controls autoplay loop muted width="200" style="border-radius: 16px" />
+<video src="./Assets/SpeedCompetition.mp4" controls width="100" style="border-radius: 16px"></video>
         </td>
         <td>
 Sadly we couldn't achieve a really good time due to a major bug in our program that made it very hard to control. We had a 500ms delay in our control loop. Also the battery array failed on us, because the batteries had to be prushed really hard against each other to keep them connected and at the same time they needed to be perfectly aligned. Both problems can be seen in the video.
@@ -64,11 +64,11 @@ Sadly we couldn't achieve a really good time due to a major bug in our program t
 <table>
     <tr>
         <td align="center">
-            <img src="./Assets/OscilloscopeBroken.jpeg" style="border-radius: 16px;"><br>
+            <img src="./Assets/OscilloscopeBroken.jpeg" width="200" style="border-radius: 16px;"><br>
             <sub>Broken Motor</sub>
         </td>
         <td align="center">
-            <img src="./Assets/OscilloscopeWorking.jpeg" style="border-radius: 16px;"><br>
+            <img src="./Assets/OscilloscopeWorking.jpeg" width="200" style="border-radius: 16px;"><br>
             <sub>Working Motor</sub>
         </td>
     </tr>
@@ -83,10 +83,10 @@ After that we started using encoders and interrupts with it to measure how far t
 <table align="right">
     <tr>
         <td align="center">
-            <img src="./Assets/VehicleLidar.jpeg" style="border-radius: 16px;">
+            <img src="./Assets/VehicleLidar.jpeg" width="200" style="border-radius: 16px;">
         </td>
         <td align="center">
-            <img src="./Assets/AccuracyLeaderboard.jpeg" style="border-radius: 16px;">
+            <img src="./Assets/AccuracyLeaderboard.jpeg" width="200" style="border-radius: 16px;">
         </td>
     </tr>
 </table>
