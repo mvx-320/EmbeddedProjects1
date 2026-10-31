@@ -53,7 +53,7 @@ At the testing phase we used 3x 9V batteries in parallel on the Vin Pin of the A
     </tr>
     <tr>
         <td align="right">
-<img src="./Assets/out.gif" alt="SpeedCompetition Gif">
+<img src="./Assets/SpeedCompetition.gif" alt="SpeedCompetition Gif" width="200">
         </td>
         <td>
 Sadly we couldn't achieve a really good time due to a major bug in our program that made it very hard to control. We had a 500ms delay in our control loop. Also the battery array failed on us, because the batteries had to be prushed really hard against each other to keep them connected and at the same time they needed to be perfectly aligned. Both problems can be seen in the video.
