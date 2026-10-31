@@ -16,10 +16,10 @@
 <table>
     <tr>
         <td width="300">
-<img src="./Assets/VehiclePortrait.png">
+<img src="./Assets/VehiclePortrait.png" alt="VehiclePortrait Png">
         </td>
         <td width="170">
-<img src="./Assets/VehicleBack.jpeg" style="border-radius: 16px;">
+<img src="./Assets/VehicleBack.jpeg" alt="VehicleBack Jpeg" style="border-radius: 16px;">
         </td>
     </tr>
 </table>
@@ -45,7 +45,7 @@ $$
 <table>
     <tr>
         <td width="50%" align="right">
-<img src="./Assets/ImprovisedBattery.jpeg" width="300" style="border-radius: 16px;">
+<img src="./Assets/ImprovisedBattery.jpeg" alt="ImprovisedBattery Jpeg" width="300" style="border-radius: 16px;">
         </td>
         <td width="50%">
 At the testing phase we used 3x 9V batteries in parallel on the Vin Pin of the Arduino to receive more power for the motors than using a laptops USB plug. Unfortunately the batteries were not available at the competition anymore so we build an even scrappier improvised battery with an array of AAA batteries.
@@ -53,7 +53,7 @@ At the testing phase we used 3x 9V batteries in parallel on the Vin Pin of the A
     </tr>
     <tr>
         <td align="right">
-<img src="./Assets/SpeedCompetition.gif" alt="SpeedCompetition Gif" width="200">
+<img src="./Assets/SpeedCompetition.gif" alt="SpeedCompetition Gif" width="200" style="border-radius: 16px;">
         </td>
         <td>
 Sadly we couldn't achieve a really good time due to a major bug in our program that made it very hard to control. We had a 500ms delay in our control loop. Also the battery array failed on us, because the batteries had to be prushed really hard against each other to keep them connected and at the same time they needed to be perfectly aligned. Both problems can be seen in the video.
@@ -64,11 +64,11 @@ Sadly we couldn't achieve a really good time due to a major bug in our program t
 <table>
     <tr>
         <td align="center">
-            <img src="./Assets/OscilloscopeBroken.jpeg" width="200" style="border-radius: 16px;"><br>
+            <img src="./Assets/OscilloscopeBroken.jpeg" alt="OscilloscopeBroken Jpeg" width="200" style="border-radius: 16px;"><br>
             <sub>Broken Motor</sub>
         </td>
         <td align="center">
-            <img src="./Assets/OscilloscopeWorking.jpeg" width="200" style="border-radius: 16px;"><br>
+            <img src="./Assets/OscilloscopeWorking.jpeg" alt="OscilloscopeWorking Jpeg" width="200" style="border-radius: 16px;"><br>
             <sub>Working Motor</sub>
         </td>
     </tr>
@@ -83,10 +83,10 @@ After that we started using encoders and interrupts with it to measure how far t
 <table align="right">
     <tr>
         <td align="center">
-            <img src="./Assets/VehicleLidar.jpeg" width="200" style="border-radius: 16px;">
+            <img src="./Assets/VehicleLidar.jpeg" alt="VehicleLidar Jpeg" width="200" style="border-radius: 16px;">
         </td>
         <td align="center">
-            <img src="./Assets/AccuracyLeaderboard.jpeg" width="200" style="border-radius: 16px;">
+            <img src="./Assets/AccuracyLeaderboard.jpeg" alt="AccuracyLeaderboard Jpeg" width="200" style="border-radius: 16px;">
         </td>
     </tr>
 </table>
@@ -97,7 +97,7 @@ Also we couldn't get precise results out of the working encoder. The course teac
     </tr>
     <tr>
         <td align="right">
-<video src="./Assets/WirelessVehicle.mp4" controls autoplay loop muted width="70%" style="border-radius: 16px"></video>
+<img src="./Assets/WirelessVehicle.gif" alt="WirelessVehicle Gif" width="300" style="border-radius: 16px"></video>
         </td>
         <td>
 We got the transmitter/receiver module `nRF24L01` as an optional additional challenge. Our group was able to build a scrappy but functional wireless controllable vehicle. Which was without the delay bug from before very controlable and was very fun to drive around.
