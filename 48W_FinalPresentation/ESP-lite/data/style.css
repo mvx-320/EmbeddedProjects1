@@ -45,6 +45,67 @@ html {
   color: #46ff46;			/* The text will be bright green */
 }
 
+.controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+speed {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.directions {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 5px;
+}
+
+.directions button {
+  border-radius: 50%;
+  border: 1px solid #555555;
+  background-color: #6a0dad;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.north {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.west {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.east {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.south {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.setNorth button{
+  background-color: #555555;/* This button will have a dark grey color */
+  color: #46ff46;			/* The text will be bright green */
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 15px solid #555555;
+}
+
 #compassSlider {
   width: 100%;				/* The slider will stretch across the whole screen */
   height: 15px;				/* The slider will be nice and tall */
